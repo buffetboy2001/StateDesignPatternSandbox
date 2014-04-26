@@ -1,60 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<modelVersion>4.0.0</modelVersion>
-<groupId>github.stuart.bowman</groupId>
-<artifactId>StateDesignPatternSandbox</artifactId>
-<packaging>jar</packaging> <!-- e.g. jar -->
-<version>1.0.0-SNAPSHOT</version> <!-- e.g. 1.0.0.0-SNAPSHOT -->
-<name>StateDesignPatternSandbox</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>github.stuart.bowman</groupId>
+	<artifactId>StateDesignPatternSandbox</artifactId>
+	<packaging>jar</packaging> <!-- e.g. jar -->
+	<version>1.0.0-SNAPSHOT</version> <!-- e.g. 1.0.0.0-SNAPSHOT -->
+	<name>StateDesignPatternSandbox</name>
 
-<description>A sandbox project to play with the state design pattern.</description>
+	<description>A sandbox project to play with the state design pattern.</description>
 
-<!-- The properties can be added to for each individual pom, this is just 
-	an example. You can add your own properties here -->
-<properties>
-	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
+	<!-- The properties can be added to for each individual pom, this is just 
+		an example. You can add your own properties here -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-<!-- list the parent pom here - if there is one -->
-<!-- <parent> <groupId>...</groupId><!-- Group ID of Parent POM <artifactId>...</artifactId><!-- 
-	Name of parent pom file <version>1.0.0.0</version> </parent> -->
+	<developers>
+		<developer>
+			<name>Stuart Bowman</name>
+			<email>dinsaneboy@yahoo.com</email>
+		</developer>
+	</developers>
 
-<developers>
-	<developer>
-		<name>Stuart Bowman</name>
-		<email>dinsaneboy@yahoo.com</email>
-	</developer>
-</developers>
+	<profiles>
+		<!-- This section is optional -->
+	</profiles>
 
-<profiles>
-	<!-- This section is optional -->
-</profiles>
 
-<dependencies>
-	<!-- List all app specific dependencies here -->
-	<!-- use RELEASE as the version if you always want it to use the latest 
-		version, but note that this is NOT supported in Maven 3 -->
-	<dependency>
-		<groupId>BLA.BLA.BLA</groupId>
-		<artifactId>foo-api</artifactId>
-		<version>RELEASE</version>
-	</dependency>
-</dependencies>
+	<build>
+		<plugins>
 
-<build>
-	<plugins>
+			<!-- you might need to enter some specific plugins here, however it will 
+				be better to have them in parent pom -->
 
-		<!-- you might need to enter some specific plugins here, however it will 
-			be better to have them in parent pom -->
-
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-ejb-plugin</artifactId>
-			<version>2.1</version>
-			<configuration>
-				<ejbVersion>3.0</ejbVersion>
-			</configuration>
-		</plugin>
-	</plugins>
-</build>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<ejbVersion>3.0</ejbVersion>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
