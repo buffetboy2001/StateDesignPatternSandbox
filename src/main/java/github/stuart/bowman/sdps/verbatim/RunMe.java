@@ -3,6 +3,8 @@
  */
 package github.stuart.bowman.sdps.verbatim;
 
+import github.stuart.bowman.sdps.verbatim.State;
+
 /**
  * @author Stuart
  *
